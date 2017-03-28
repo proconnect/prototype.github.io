@@ -1,0 +1,1112 @@
+/* Author - Ace Lio 2016 B.md*/ 
+ 
+header{	 
+	z-index: 4000;
+  position: fixed;
+  width: 100%;    
+} 
+   
+.header-wrapper{ 
+  max-width: 1280px;
+  margin: 0 auto;
+}
+   
+.clearfix{		
+  background-color: #fff !important;
+}
+
+.logo{
+  background-image: url('../img/logo.png');  
+  width: 272px;
+  height:80px;
+  float: left; 
+}
+
+#hamburger{
+  display: none;
+}
+
+header nav ul{		 
+	width: 690px;
+  float: right;
+	padding:0;
+  margin: 0;
+	list-style: none; 
+}  
+
+header ul li{
+  margin-bottom: 0em !important;
+}
+
+nav ul li a{
+	float:left;  
+  color:#27c0c1 !important; 
+	display: block;
+	height: 80px;
+	padding:0 2%;
+	line-height: 80px;	
+	text-decoration: none;
+	font-size: 2rem; 
+	font-weight: normal;
+	font-family: 'Raleway', sans-serif;
+}
+
+nav a:hover{  
+  color: #000;  
+}
+
+nav a:active{  
+  color: #ffac00;  
+}
+
+/* Img */
+.title{  
+  color:#ff1d25 !important;
+  font-family: 'Raleway', sans-serif;
+  margin:-10% auto !important;  
+}
+ 
+h1{ 
+  margin:7% auto !important; 
+  line-height: 1.7 !important;
+  text-align: center;
+  font-size: 2rem !important;
+  width:320px;
+  color:#fff;  
+  background-color: #27c0c1 !important;
+  border-radius: 15px;
+  padding:2.3%;
+  font-family: 'Raleway', sans-serif;
+} 
+
+h5{
+  margin:3% auto !important;   
+  color:#27c0c1 !important;
+ 
+}  
+ 
+p{
+  color:#fff;
+  width:auto;
+  height:auto;  
+}
+
+i{
+  color:#fff !important;
+}
+
+#hmvid{
+  min-width:100%;
+  min-height:100%;
+  width: auto;
+  height: auto;
+  left:50%;
+  top:53%;
+  position: absolute;   
+  margin:0 auto;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  background-size: cover;
+  background-color: #fff !important;
+}
+
+#group2 .parallax__layer--fore #app {
+  -webkit-transform: translateZ(90px) scale(.9) !important;
+  transform: translateZ(90px) scale(.9) !important;
+  z-index: 1; 
+  top:-5% !important;  
+  }   
+
+#jim-body{   
+  top:-3% !important;
+  left:-4% !important; 
+}
+
+#jim-mainWindow h1{
+  margin:0% 0 0 63% !important; 
+  line-height: 1.7 !important;
+  text-align: center;
+  font-size: 2rem !important;
+  width:280px;
+  height:80px;  
+  color:#fff;
+  background-color:#27c0c1 !important; 
+  border-radius: 15px;
+  padding:2.3%;
+  font-family: 'Raleway', sans-serif; 
+}
+
+#toppanel #control-bar{
+  margin:10% auto !important;
+}
+ 
+#toppanel #control-bar span{
+  color:#27c0c1 !important;  
+}
+
+.green{
+  border-top: 20px solid #96c93d;
+  padding-bottom: 10px;
+
+}
+
+.orange{
+  border-top: 20px solid #f7931e;
+  padding-bottom: 10px;
+
+}
+  
+.blue{
+ border-top: 20px solid #3fa9f5;
+ padding-bottom: 10px;
+}
+ 
+.red{
+  border-top: 20px solid #ff1d25;
+  padding-bottom: 10px;
+}
+
+.body {
+    height: 2000px;    
+}
+
+
+#group2 #app{
+  width:100%;
+  position:absolute;
+  background-position: center;
+  margin:2% 0 0 0%;
+  height:100vh; 
+}
+
+#group2 .placeholderLeft{  
+  position: absolute;
+  z-index: 2000;     
+  bottom: 65%; 
+  margin:-16% 3%; 
+  margin-left:3% !important;
+  text-align: left; 
+  width:22%;
+  height:auto;    
+  font-size: 2rem;   
+  font-weight: lighter; 
+  line-height: 1.8rem;    
+  font-family: 'Raleway', sans-serif;
+  border-radius: 15px;
+  padding:2.08333333%;
+}
+
+#group2 .placeholderLeft p{  
+ text-align: left;
+ margin:10% auto;
+ width:90%;
+ color: #27c0c1 !important;
+} 
+
+.placeholderLeft i {
+  color:#27c0c1 !important;
+}
+
+#group2 .placeholderRight{ 
+  margin-top:10% !important; 
+  margin-right:2% !important;
+  float:right; 
+  z-index: 5000;     
+  bottom: 65%; 
+  text-align: left; 
+  width:30%;
+  height:auto;    
+  font-size: 2rem;   
+  font-weight: lighter; 
+  line-height: 1.8rem;    
+  font-family: 'Raleway', sans-serif;
+  border-radius: 15px;
+  padding:2.08333333%;  
+}  
+
+#group2 .placeholderRight p{
+  color:#27c0c1 !important;
+  font-size: 2rem; 
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#group2 .bc3-signup-form__header {    
+  background-color: #27c0c1 !important;
+  width:17% !important;
+}
+
+#group2 .signup_form {    
+  padding: 2em 1em 1em; 
+  height: auto;  
+  z-index: 2000;  
+}  
+
+#group3 .placeholderLeft{
+  z-index: 2000;     
+  bottom: 135%;   
+  text-align: left; 
+  margin-left:3%;
+  width:30%;
+  height:auto;    
+  font-size: 2rem;  
+  font-weight: lighter; 
+  line-height: 1.8rem;    
+  font-family: 'Raleway', sans-serif;
+  border-radius: 15px;
+  padding:2.08333333%;
+}  
+
+#group3 .placeholderLeft p{
+  color:#27c0c1 !important;
+  font-size: 2rem; 
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#group3 .placeholderLeft i {
+  color:#27c0c1 !important;
+}
+
+#group3 .bc3-signup-form__header {    
+  background-color: #27c0c1 !important;
+  width:15%;
+}
+
+#group3 .signup_form { 
+  height: auto;  
+  z-index: 2000;   
+  float: left;
+  margin-top:-150%;
+  margin-left: 5%; 
+} 
+
+#group3 .bc3-signup-form{  
+  position: absolute;
+  margin-top:51%;
+  width:30%;
+}
+
+#group3 .title{
+  margin:0 auto !important;
+}
+
+#group3 img{  
+  width:75%; 
+  margin-top:5%;
+  margin-left:12% !important;
+}
+
+#group3 .parallax__layer--fore .title img {
+  -webkit-transform: translateZ(90px) scale(.9);
+  transform: translateZ(90px) scale(.9);
+  z-index: 1;   
+  }   
+
+#group3 .placeholderRight{ 
+  margin:-15% 73%; 
+  position: fixed;
+  margin-right:3% !important;
+  z-index: 2000;     
+  bottom: 65%; 
+  text-align: left; 
+  width:22%;
+  height:auto;    
+  font-size: 2rem;  
+  font-weight: lighter; 
+  line-height: 1.8rem;    
+  font-family: 'Raleway', sans-serif;
+  border-radius: 15px;
+  padding:2.08333333%;
+}  
+
+#group3 .placeholderRight p{
+ text-align: left;
+ margin:10% auto;
+ width:70%;
+ color: #27c0c1 !important;
+}
+
+#group3 .placeholderRight i {
+  color:#27c0c1 !important;
+}
+
+#group3 .bc3-signup-form__header { 
+  background-color: #27c0c1 !important;
+}
+
+
+#group4 .placeholderLeft{ 
+  margin:30% 16%;  
+  z-index: 5000;
+  width:100%;
+}
+
+#group4 .placeholderLeft p{  
+ text-align: left;
+ color: #fff!important; 
+ font-size: 2rem;
+ width:27.4%;
+}
+
+#group4 .placeholderLeft h5, #group4 .placeholderLeft i{
+ color:#fff !important; 
+}
+
+#group4 .parallax__layer--fore{
+    background-image: url("../img/hud.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1000;
+  }
+
+#group5 .placeholderCenter{ 
+ margin:-15% 16%; 
+}
+
+#group5 .placeholderCenter p{  
+ text-align: left;
+ margin:75% auto;
+ font-size: 2rem; 
+ width:35%;
+ color: #27c0c1 !important;
+}
+
+#group5 .placeholderCenter h5, #group5 .placeholderCenter i{
+ color:#27c0c1 !important;  
+}
+
+#group5 img{
+  z-index: 2000;  
+  bottom: 65%; 
+}
+
+#group5 .parallax__layer--fore img{  
+  width:100%;  
+}
+
+/* #### SEND A MESSAGE #### */
+#group5 p {text-shadow:0 1px 0 #fff; font-size: 2rem; }
+#wrap {border-radius:10px;width:30%; background-color:none;margin:8% auto 0; height:;}
+h1 {margin-bottom:20px; text-align:center;font-size: 2rem;  text-shadow:0 1px 0 #ede8d9; }
+
+
+#group5 #form_wrap { overflow:hidden; height:470px; position:relative; top:520px;
+  -webkit-transition: all 1s ease-in-out .3s;
+  -moz-transition: all 1s ease-in-out .3s;
+  -o-transition: all 1s ease-in-out .3s;
+  transition: all 1s ease-in-out .3s;}
+  
+#group5 #form_wrap:before {content:"";
+  position:absolute;
+  bottom:128px;left:0px;
+  background:url('images/before.png');
+  width:530px;height: 316px;}
+   
+#group5 #form_wrap:after {content:"";position:absolute;
+  bottom:0px;left:0;
+  background:url('images/after.png');
+  width:530px;height: 260px; }
+
+#group5 #form_wrap.hide:after, #form_wrap.hide:before {display:none; }
+#group5#form_wrap:hover {height:776px;top:800px;}
+
+
+#group5 form {
+  position:fixed;z-index:4000; 
+  -moz-border-radius: 3px; -webkit-border-radius: 3px, inset 0px 0px 27px #fff;
+  -webkit-transition: all 1s ease-in-out .3s;
+  -moz-transition: all 1s ease-in-out .3s;
+  -o-transition: all 1s ease-in-out .3s;
+  transition: all 1s ease-in-out .3s;}
+
+#group5 form{              
+top:85% !important; overflow:hidden;
+height:190px;width:25% !important;margin-left:2.5% !important;padding:20px; 
+
+}
+
+#group5 #form_wrap form {height:530px;}
+
+fieldset label{
+  color: #27c0c1 !important;
+}
+
+.button-submit-signup{
+  color: #27c0c1 !important;
+}
+
+#group5 label {
+  margin: 11px 20px 0 0; 
+  color: #27c0c1 !important;
+  font-size: 2rem; 
+  text-transform: uppercase; 
+  text-shadow: 0px 1px 0px #fff;
+}
+
+#group5 input[type=text], textarea {
+  font: 14px normal normal uppercase helvetica, arial, serif;
+  color: #7c7873;background:none;
+  /*width: 380px;*/ height: 36px; padding: 0px 10px; margin: 0 0 10px 0;
+  border:2px solid #27c0c1 !important;
+  -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+  -moz-box-shadow: inset 0px 0px 1px #726959;
+  -webkit-box-shadow:  inset 0px 0px 1px #b3a895; 
+  box-shadow:  inset 0px 0px 1px #b3a895;
+} 
+
+#group5 textarea { height: 80px; padding-top:14px;}
+
+#group5 textarea:focus, input[type=text]:focus {background:rgba(255,255,255,.35);}
+
+#group5 #form_wrap input[type=submit] {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;  color: #27c0c1 ;text-shadow:0 1px 0 #fff;
+  width:100%; text-align:center;opacity:0;
+  background:none; 
+  cursor: pointer;
+  -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; 
+  -webkit-transition: opacity .6s ease-in-out 0s;
+  -moz-transition: opacity .6s ease-in-out 0s;
+  -o-transition: opacity .6s ease-in-out 0s;
+  transition: opacity .6s ease-in-out 0s;
+}
+
+#group5 #form_wrap:hover input[type=submit] {z-index:1;opacity:1;
+  -webkit-transition: opacity .5s ease-in-out 1.3s;
+  -moz-transition: opacity .5s ease-in-out 1.3s;
+  -o-transition: opacity .5s ease-in-out 1.3s;
+  transition: opacity .5s ease-in-out 1.3s;}
+
+#group5 #form_wrap:hover input:hover[type=submit] {color:#27c0c1;}
+
+#group5 #form_wrap p{
+  color: #27c0c1 !important;
+}
+/* #### EOF SEND A MESSAGE #### */
+
+#footer{
+  width: 100%;
+  height: 80px;   
+  margin: 0 auto;   
+  position: fixed;
+  z-index: 2000;
+  background-color: #fff; 
+  position: absolute;
+  bottom: 0;   
+}
+
+#footer nav{ 
+  margin: -25px auto;   
+  height: 60px;    
+  z-index: 2000;   
+  width:160px;  
+  background-position: center;   
+}  
+
+#footer nav ul{   
+  width: 150px;    
+  padding:0;
+  list-style: none;      
+  margin: 35px auto;
+}
+ 
+/* **************************************** */
+
+/* ### MEDIA QUERY BREAKPOINTS ### */
+
+@media only screen and (max-width::1920px) {
+ 
+
+  #group2 .parallax__layer--fore #app {
+  -webkit-transform: translateZ(90px) scale(.8) !important;
+  transform: translateZ(90px) scale(.8) !important;
+  z-index: 1;   
+  margin-left:-15% !important;
+  margin-top:10%;
+  }   
+
+  #jim-body{    
+   top:20% !important;
+   left:-8%;
+  }
+
+  #group2 .placeholderLeft{  
+   position: absolute;
+   text-align: left;
+   margin-top: -80% !important;
+   margin-left:8% !important;
+   width:50%;
+   color: #27c0c1 !important;
+  } 
+
+  #group2 .placeholderLeft p{
+    margin-top: -60% !important;
+    width:80%;
+  }
+
+  #group2 .placeholderRight {
+    position: relative;
+    margin-top: 60% !important;
+    margin-right: 2%;
+    float: right;
+    z-index: 5000;
+    bottom: 65%;
+    text-align: left;
+   width:400px;
+    height: auto;
+    font-size: 2rem; 
+    font-weight: lighter;
+    line-height: 1.8rem;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 15px;
+    padding: 2.08333333%;
+}
+
+  #group2 .signup_form {   
+    position: absolute;
+    left:4.5% !important;
+    height: auto;
+    z-index: 2000;
+    width:400px;   
+}
+
+  #group2 #toppanel .button {
+    margin-top: 55px;
+    margin-right: 180px;
+    float: left;
+    position: relative;
+    padding: 6px 17px 4px 17px;
+}
+
+  #group2 .bc3-signup-form__header {
+    background-color: #27c0c1 !important;
+    width: 25%;
+}
+
+#group3 .placeholderLeft{
+    margin-top:-25%;
+}
+
+#group3 .title img{
+  margin-left:18%;
+  width:85%;
+}
+
+ #group3 .parallax__layer--fore .title img {
+  -webkit-transform: translateZ(90px) scale(.9) !important;
+  transform: translateZ(90px) scale(.9) !important;
+  z-index: 1;  
+  }   
+
+ #group3 .bc3-signup-form{
+  position: absolute;
+  float: left;
+  margin-top:80% !important;  
+  width:300px !important;
+  }
+
+ #group4 .placeholderLeft {
+    margin: 58% auto !important;   
+    z-index: 5000;
+    width: 45%;
+}
+
+ #group5 #form_wrap{
+  position: absolute;  
+  left: 38%;
+ }
+
+  #group5 form{   
+  top:50% !important; overflow:hidden;
+  height:190px;width:70%;margin-left: 0% ;padding:20px; 
+  background-color: rgba(255, 255, 255, 0.7);
+  }
+    
+}
+
+@media only screen and (max-width: 1280px){  
+
+header nav ul{
+  position: relative;
+  margin-right: 10% !important;
+}
+
+.logo{
+  position: relative;
+  margin-left: 2%;
+}
+
+  #group2 .parallax__layer--fore #app {
+  -webkit-transform: translateZ(90px) scale(.9) !important;
+  transform: translateZ(90px) scale(.9) !important;
+  z-index: 1;   
+  margin-left:-11% !important;
+  margin-top:15%;
+  }  
+
+  #group2 .placeholderLeft{
+    width:100%;
+  }
+
+  #group2 .placeholderLeft p{
+  position: absolute !important;
+  margin-top: -20% !important;
+  margin-left: -3% !important;
+  width: 67% !important;
+  text-align: center;
+  }
+
+  #group2 .bc3-signup-form__header {    
+  background-color: #27c0c1 !important;
+  width:19.5% !important;
+}
+
+  #group2 .placeholderRight{
+  position: absolute;
+  top:10% !important;  
+  margin-left: 69% !important;
+}
+
+  #group3 .placeholderLeft{
+  position: absolute;
+  top:10% !important;  
+  margin-left: 5% !important;
+}
+
+ #group3 .bc3-signup-form{
+  position: absolute;
+  margin-left: -10% !important;
+  margin-top:165% !important;  
+  width:76% !important;
+  }
+
+  #group3 .bc3-signup-form__header {    
+  background-color: #27c0c1 !important;
+  width:19.5% !important;
+}
+  
+
+  #group4 .placeholderLeft{
+    width:100%;
+  }
+
+  #group4 .placeholderLeft p {
+    text-align: left;
+    position: absolute;
+    width: 44% !important;
+    margin-left: -5% !important;
+    margin-top: 28%;
+    font-size: 2rem;
+}  
+
+  #group5 form{      
+  top:49% !important; overflow:hidden;
+  height:350px !important;width:30% !important;
+  margin-left:0 !important;padding:20px; 
+  z-index: 4000;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+}
+
+
+@media only screen and (max-width:925px) {
+  
+  .logo{
+    float: none;
+  }
+
+  header nav ul{     
+    width: 650px;
+    padding:0;
+    list-style: none;
+    float: none;       
+  }  
+
+  nav ul li a{
+    color:#27c0c1 !important; 
+    display: block;
+    height: 80px;
+    padding:0 2%;
+    line-height: 80px;  
+    text-decoration: none;
+    font-size: 2rem; 
+    font-weight: normal;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  #group2 #app{
+  margin-left:-15% !important;
+  margin-top:50% !important;
+  }
+ 
+  #group2 #jim-body{
+    position: absolute;
+    margin-top:20% !important;
+  }
+
+  #group2 .placeholderLeft{
+    position: absolute;
+    margin:-5% 10% !important;
+    width:70%;  
+  }
+
+  #group2 .parallax__layer--fore {
+    -webkit-transform: translateZ(90px) scale(.7);
+    transform: translateZ(90px) scale(.5);
+    z-index: 1;   
+  }  
+
+  #group2 .placeholderLeft h5{
+    text-align: center;
+  }
+
+  #group2 #jim-mainWindow{
+    width:80%;
+    margin-left: -25%;
+    background-color: transparent;
+  }
+
+  #group3 .placeholderRight{
+    position: relative;
+    margin-top: 40% !important;
+    width:35%;
+  }
+
+  #group3 .placeholderLeft{
+    position: absolute;
+    margin-top: 50% !important;
+    width:35%;
+    margin-left: 12% !important;
+  }
+
+  #group3 .title {
+    position: absolute;
+    margin-left:27% !important;
+    margin-top: -35% !important;
+    z-index: 5000;
+    width:140% !important;
+  }
+
+  #group4 .parallax__layer--base{
+    background-image: url("../img/hud.png");
+    background-repeat: no-repeat;  
+    width:100%;
+    height:60%;
+    margin:0 auto;
+  }
+
+  #group4 .placeholderLeft{  
+    position: relative;
+    margin-top: 80% !important;
+    margin-left: 48% !important;
+    width: 50%;
+  }
+
+  #group5 .placeholderCenter{
+    position: absolute;
+    margin:-19% 40%;
+    font-size: 2rem; 
+  }
+
+#group5 #form_wrap{
+  position: absolute !important;
+  top: 36% !important;
+  left: 40% !important;
+  width:30% !important;
+  height:30%; 
+ }
+
+  #group5 form{  
+  overflow:hidden;
+  height:150% !important;  margin-left: 0% ;padding:20px; 
+  z-index: 5000;
+  background-color: rgba(255, 255, 255, 0.7);
+  }
+
+}
+
+@media only screen and (max-width:650px) {
+
+  .header-wrapper{
+    position: relative;
+    z-index: 3000;
+  }
+
+  .logo-row{
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+    background-color: white;
+  }
+
+  .logo{
+    float: left;
+  }
+
+  #hamburger{
+    display: block;
+    float: right;
+    color:#27c0c1 !important;
+    font-size: 5rem;
+    line-height: 1.5;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  header nav{
+    clear: both;
+    position: relative;
+  }
+
+  header nav ul{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    transform: translate( 0, -100%);
+    transition: .3s;
+    z-index: 1000;
+  }
+
+   header nav ul.open{
+    transform: translate( 0, 0);
+  }
+
+
+  header nav ul li{  
+    float:left;
+    width:100%;   
+    height: 40px !important; 
+  }
+
+  nav ul li a{
+  float:left; 
+  line-height: 40px !important;   
+  color:#27c0c1 !important; 
+  font-size: 1.8rem !important;
+  }
+
+  nav a:hover{  
+  background-color: #27c0c1;  
+  height:40px;
+  color: #fff !important;
+  width:100%;
+  z-index: 5000;
+  margin-left: -5px; 
+  }
+
+  nav a:active{  
+  color: #fff;  
+  }
+
+  #hmvid{
+  
+  }
+
+  #group2 .parallax__layer--fore #app {
+  -webkit-transform: translateZ(90px) scale(.7);
+  transform: translateZ(90px) scale(.5);
+  z-index: 5000;  
+  width:80% !important;
+  margin:65% auto !important;
+  }  
+
+  #group2 .placeholderLeft{
+    width:100%;
+  }
+
+  #group2 .placeholderLeft p{
+  position: absolute !important;
+  margin: 10% auto !important;
+  width: 80% !important;
+  text-align: center;
+  }
+  
+  #group2 .placeholderRight{
+    display: none;
+  }
+
+  #group3 .placeholderRight{
+    top:18% auto !important;
+  }
+
+  #group3 .parallax__layer--fore .title img {
+  -webkit-transform: translateZ(90px) scale(.9);
+  transform: translateZ(90px) scale(.9);
+  z-index: 5000;  
+  }  
+
+  #group3 .parallax__layer--fore img{
+  position: absolute !important;
+  width: 60% !important;
+  margin-left: -46% !important;
+  margin-top: 18% !important;
+  }
+  
+  /* ######### */
+  #group3 .bc3-signup-form{  
+  display: none;
+  }  
+
+  #group3 .placeholderRight{
+    position: absolute !important;
+    margin:-30% auto !important;
+    width:100%;    
+  }
+
+  #group3 .placeholderRight p{
+    width:90% !important;
+    text-align: center;
+  }
+
+  #group4 .parallax__layer {
+    position: absolute;
+    top: 20% !important;}
+
+  #group4 .placeholderLeft{
+    width:100%;
+  }
+
+  #group4 .placeholderLeft p {
+    position: absolute;
+    width: 60% !important;
+    margin-left: -12% !important;
+    margin-top: -20%;
+    text-align: left;
+}
+
+  #group4 .parallax__layer--fore{
+    background-image: url("../img/hud.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -45% !important;
+    z-index: 1000;
+  }
+
+  #group5 .parallax__layer--fore img{
+  margin-top:40% !important;
+  z-index: 1000;
+  }
+
+  #group5 form{     
+  top:45% !important; overflow:hidden;
+  height:350px !important;width:35% !important;
+  margin-left:-8% !important;padding:20px; 
+  z-index: 4000;
+ background-color: rgba(255, 255, 255, 0.7);
+}
+
+}  
+
+@media only screen and (max-width:360px){
+  #group2 #app{
+    display: none;
+  }
+
+  .storeApp{
+    float: left;
+    position: absolute;    
+    background-image: url('../img/storeApp.png');
+    margin-top:340%;
+    margin-left: 5%;
+    width:320px;
+    height:111px;   
+    z-index: 5000;
+  }
+
+  .storeAnd{
+    float: left;
+    position: absolute;    
+    background-image: url('../img/storeAnd.png');
+    margin-top:375%;
+    margin-left: 5%;
+    width:320px;
+    height:106px;   
+    z-index: 5000;
+    text-transform: scale(0.7);
+  }
+
+  #group2 .placeholderLeft{
+    width:100%;
+  }
+
+  #group2 .placeholderLeft p{
+  position: absolute !important;
+  margin-top: 30% !important;
+  margin-left: -3% !important;
+  width: 80% !important;
+  text-align: center;
+  }
+
+  #group3 .placeholderRight{
+    position: absolute !important;
+    margin:-60% auto !important;
+    width:100%;    
+  }
+
+  #group3 .placeholderRight p{
+    width:90% !important;
+    text-align: center;
+  }
+
+  #group3 .parallax__layer--fore .title img {
+  -webkit-transform: translateZ(90px) scale(.9);
+  transform: translateZ(90px) scale(.9);
+  z-index: 5000;  
+  }  
+
+  #group3 .parallax__layer--fore img{
+  position: absolute !important;
+  width: 70% !important;
+  margin-left: -53% !important;
+  margin-top: 50% !important;
+  }
+
+  #group4 .parallax__layer--fore{
+    background-image: url("../img/hud.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -65% !important;
+    z-index: 1000;
+  }
+
+  #group4 .placeholderLeft{
+    width:100%;
+  }
+
+  #group4 .placeholderLeft p {
+    position: absolute;
+    width: 60% !important;
+    margin-left: -15% !important;
+    margin-top: -15%;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+ #group5 .parallax__layer--fore img{
+  margin-top:80% !important;
+  z-index: 1000;
+  }
+
+  #group5 form{     
+  top:45% !important; overflow:hidden;
+  height:350px !important;width:65% !important;
+  margin-left:-25% !important;padding:20px; 
+  z-index: 4000;
+  background-color: rgba(255, 255, 255, 0.7);
+
+}
+
+
+}
+
+
+
+

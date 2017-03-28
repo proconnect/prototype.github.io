@@ -1,0 +1,1373 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ *
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+ 
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; 
+}
+
+::selection { 
+  background: #b3d4fc;
+  text-shadow: none; 
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+ 
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+    z-index: 5000;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+ 
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* Parallax base styles
+  --------------------------------------------- */
+
+body {
+  font: 100% / 1.5 Raleway !important;
+  background-color: black;   
+}
+
+.mobile{
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+header{
+  width: 100%;
+  height:80px;
+  padding:0 2.941176470%;/*10/340*/   
+  position: fixed;
+  z-index: 5000; 
+  background-color: rgba(0, 0, 0, 0.2);
+}
+ 
+nav{ 
+  margin:.3% auto;    
+  height: 80px;    
+  z-index: 2000;  
+}  
+
+nav ul{     
+  width: 430px;  
+  list-style: none;      
+  margin: 23px auto;  
+  left: 24.38%;    
+}
+
+nav li{
+    
+}
+
+header nav ul{  
+  margin: 0 auto;
+}
+
+header nav img{
+  width:43px;
+  height: 70px;
+}
+
+nav a{
+  float:left;
+  display:block;
+  height: 80px;
+  padding: 0 2%;
+  line-height: 80px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: normal;   
+  transition: background-color .5s, color .5s;
+}
+/**/
+nav a:hover, nav a.selected{  
+  color:#0a898d; 
+}
+
+#nav a.highlite{
+  color: #000;
+}
+
+/*Main sections*/
+main{
+  padding-bottom: 80px;
+}
+
+main section{
+  min-height: 100vh;
+  background-color: black;
+}
+
+main #home{
+  position: relative;
+  background-image: url('../img/image-5.jpg'); 
+  background-size: cover; 
+  background-position: center;     
+}
+
+#home img{
+  background-repeat: no-repeat;
+  margin-top:20%;
+  margin-left:27%;
+  border: 5px solid #fff;
+  border-radius: 15px;
+  width:50%; 
+}
+
+main #info{
+  background-image: url('../img/bkgrd/info.jpg');
+  background-size: cover;  
+  height:100vh; 
+}
+
+main #tickets{
+  background-image: url('../img/bkgrd/tickets.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; 
+}
+
+/* Content for Sections */
+video{
+  min-width:100%;
+  min-height:100%;
+  width: auto;
+  height: auto;
+  left:50%;
+  top:53%;
+  position: absolute;   
+  margin:0 auto;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  background-size: cover; 
+}
+
+/*.play{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background-image: url('../img/icons/playBtnHover.png');  
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 4000;
+  color:#fff;
+}
+
+.play:hover{
+  background-image: url('../img/icons/playBtn.png'); 
+  opacity: 0.7; 
+}*/
+
+#info .title {  
+  text-align: center;
+  position: absolute;
+  left: 24.38%;
+  top: 130%;
+  padding:2%; 
+  font-size: 1.2rem;  
+  font-weight: lighter; 
+  line-height: 1.8rem;
+  color:#fff;
+  width: 50%;
+  padding: 10px;
+}
+
+#tickets .title {  
+  text-align: center; 
+  width: 50%;
+  position: absolute; 
+  left: 24.38%;
+  top: 225%; 
+  margin:10% auto;  
+}
+
+#gallery{
+  width: 100%;
+  max-width: 1280px;
+  margin:0 auto;
+  padding:1.0204081%;/*10/980*/
+  padding-top:8%;
+  padding-bottom:5%;
+}
+
+#gallery .thumbs{  
+  width:100%;
+  margin-top: 1.0204081%;
+  z-index: 1000;
+  
+}
+
+#gallery .thumbs img { 
+  float: left;
+  width:22.91666667%; /*220/960*/
+  margin: 1.04166667%; /*10/960*/
+  cursor: pointer;
+}
+
+.btn1 h5{
+  position: absolute;
+  margin: 0px;
+  margin-left:63px;
+  margin-top
+  font-weight: normal;
+  color:#0a898d;  
+  /*color: #000;*/
+}
+
+.btn2 h5{
+  position: absolute;
+  margin: 0px;
+  margin-left:35px;
+  font-weight: normal;
+  color:#0a898d;  
+  /*color: #000;*/
+}
+
+.btn3 h5{
+  position: absolute;
+  margin: 0px;
+  margin-left:50px;
+  font-weight: normal;
+  color:#0a898d;  
+  /*color: #000;*/
+}
+
+.btn4 h5{
+  position: absolute;
+  margin: 0px;
+  margin-left:60px;
+  font-weight: normal;
+  color:#0a898d;  
+  /*color: #000;*/
+}
+
+#gallery .thumbs .btn1{
+  float: left;
+  width:22.91666667%; /*220/960*/
+  height: 318px;
+  margin: 1.04166667%; /*10/960*/
+  cursor: pointer;
+  background-image: url('../img/videoThumbs/music.png');
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border:none;
+  cursor: pointer;   
+  opacity: 0.8;
+}
+
+#gallery .thumbs .btn1:hover{
+  opacity:1;
+}
+
+#gallery .thumbs .btn2{
+  float: left;
+  width:22.91666667%; /*220/960*/
+  height: 318px;
+  margin: 1.04166667%; /*10/960*/  
+  cursor: pointer;
+  background-image: url('../img/videoThumbs/music.png');
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border:none;
+  cursor: pointer;  
+  opacity: 0.8;
+}
+
+#gallery .thumbs .btn2:hover{
+  opacity:1;
+}
+
+#gallery .thumbs .btn3{
+  float: left;
+  width:22.91666667%; /*220/960*/
+  height: 318px;
+  margin: 1.04166667%; /*10/960*/
+  cursor: pointer;
+  background-image: url('../img/videoThumbs/music.png');
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border:none;
+  cursor: pointer; 
+  opacity: 0.8; 
+}
+
+#gallery .thumbs .btn3:hover{
+  opacity:1;
+}
+
+#gallery .thumbs .btn4{
+  float: left;
+  width:22.91666667%; /*220/960*/
+  height: 318px;
+  margin: 1.04166667%; /*10/960*/
+  cursor: pointer;
+  background-image: url('../img/videoThumbs/music.png');
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border:none;
+  cursor: pointer;  
+  opacity: 0.8; 
+}
+
+#gallery .thumbs .btn4:hover{
+  opacity:1;
+}
+
+.show-modal1{
+  background-image: url('../img/videoThumbs/1.jpg');
+}
+
+.show-modal2{
+  background-image: url('../img/videoThumbs/2.jpg');
+}
+
+.show-modal3{
+  background-image: url('../img/videoThumbs/3.jpg');
+}
+
+.show-modal4{
+  background-image: url('../img/videoThumbs/4.jpg');
+}
+
+/*Image Modal Overlay*/
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(34, 34, 34, 0.9);
+  z-index: 3000;
+}
+
+.modal .modal-container {
+  position: absolute;
+  height:auto;  
+  top: 50%;
+  left: 50%;
+  padding: 1.04167%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.modal .modal-container img {
+  width: 100%;
+}
+
+.modal .modal-container .next, .modal .modal-container .prev, .modal .modal-container .close {
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-size: 3em;
+  cursor: pointer;
+  transform: translate(0 -50%);
+}
+
+.modal .modal-container .next {
+  right: -50px; 
+}
+
+.modal .modal-container .prev {
+  left: -50px;
+}
+
+.modal .modal-container .close {
+  top: -50px;
+  right: -50px;
+  transform: translate(0 0);
+}
+/*End Image Modal Overlay*/
+
+#info .title h5, #tickets .title h5{ 
+  text-align: center;  
+  font-size: 1em;
+  font-weight: normal;    
+  width:320px;
+  height: 40px;
+  margin: 2% auto;
+  color: #fff;
+  text-decoration: none;  
+}
+
+#info .title h5{
+  /*color: rgba(146,0,66);*/
+}
+
+#info .title h4{
+  color:#fff;
+  font-weight: normal;
+}
+
+#info .title {
+  background:rgba(0,0,0,0.2); 
+  border-radius: 15px;
+  padding:2.08333333%;
+}
+
+h6{
+  font-size: 1.4rem; 
+}
+
+/* #Info Quotes */
+#info .fa-quote-left{
+  float: left;
+  border:none;
+  padding:1rem; 
+  color: #fff;
+}
+
+#info .fa-quote-right{  
+  float: right;  
+  border:none;
+  color: #fff;
+}
+
+/* Ticket overlay */
+.ticket-modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(34, 34, 34, 0.9);
+  z-index: 3000;   
+}
+
+.ticket-modal .modal-container {
+  margin:0 auto;
+  position: absolute;
+  height:auto; 
+  width:60%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  padding: 1.04167% auto;
+  transform: translate(-50%, -50%);
+  background-color: white; 
+}
+
+/* Form */
+.formWrap{    
+  margin:.20833333% auto; 
+  padding:5%;  
+}
+
+.input-group{    
+  padding:10%; 
+  margin:-17% auto; 
+  padding-left:20%;  
+}
+
+.form-control{
+  padding:1rem; 
+  padding-top: 0.7rem; 
+  width: 95%;
+  height:80%;
+}
+
+.fa-fw {
+    width: 2.5em;
+    text-align: center;
+}
+
+.circle-text {
+    width:15%;
+    margin:0 auto;    
+}
+
+.circle-text:hover{
+    content: "";
+    display: block;
+    width: 15%;
+    height:0;
+    padding-bottom: 15%;
+    background-color: rgba(146,0,66,1); 
+     -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+
+}
+
+.circle-text a{
+  color:#fff;
+  text-decoration: none;
+}
+
+.circle-text:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height:0;
+    padding-bottom: 100%;    
+    background-color: rgba(146,0,66,0.5); 
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+}
+
+.circle-text div {
+    float:left;
+    width:100%;
+    padding-top:50%;
+    line-height:1em;
+    margin-top:-0.5em;
+    text-align:center;
+    color:white;
+}
+
+
+
+.box:hover a{
+  background-color: rgba(146,0,66,1); 
+  color: #fff;  
+  height: 4%;  
+  border-radius: 50px/50px;   
+}
+
+/*Ticket Modal*/
+.ticket-modal{
+  display: none;
+}
+
+/* Footer */
+footer{
+  width: 100%;
+  padding:0 2.941176470%; 
+  position: fixed;
+  z-index: 2000;
+  background-color: rgba(0, 0, 0, 0.3);   
+  bottom: 0;   
+}
+
+footer nav{   
+  z-index: 2000;   
+}  
+
+footer nav ul{   
+  width: 176px;    
+  padding:0;
+  list-style: none;   
+  margin: 30px auto;
+  left: 24.38%;  
+}
+
+footer nav li a{
+  /*float: left; */
+}
+
+footer nav li a:hover{  
+  background-color: #000;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+/* Media Query for tablet*/
+@media (max-width: 1280px){
+  .ticket-modal .modal-container {
+  margin:5% auto;
+  position: absolute;
+  height:auto; 
+  width:80%;
+  height: 75%;
+  top: 35%;
+  left: 50%;
+  padding: 1.04167% auto;
+  transform: translate(-50%, -50%);
+  background-color: white; 
+}
+
+/* Form */
+.formWrap{    
+  margin:.20833333% auto; 
+  padding:5%; 
+}
+
+.input-group{    
+  padding:0%; 
+  margin:-15% auto; 
+  padding-left:2%;  
+}
+
+.form-control{
+  padding:1rem; 
+  padding-top: 0.7rem; 
+  width: 95%;
+  height:80%;
+}
+
+#gallery .thumbs .btn1{
+  float: left;
+  width:22.87%; /*220/960*/
+  height: 195px; 
+  cursor: pointer;   
+}
+
+#gallery .thumbs .btn2{
+  float: left;
+  width:22.87%; /*220/960*/
+  height: 195px; 
+  cursor: pointer;   
+}
+
+#gallery .thumbs .btn3{
+  float: left;
+  width:22.87%; /*220/960*/
+  height: 195px;
+  cursor: pointer; 
+}
+
+#gallery .thumbs .btn4{
+  float: left;
+  width:22.87%; /*220/960*/
+  height: 195px;
+  cursor: pointer;   
+}
+
+}
+
+@media (max-width: 1280px){
+#gallery .thumbs .btn1{
+  float: left;
+  width:22.87%; /*220/960*/
+  height: 318px; 
+  cursor: pointer;   
+}
+
+#gallery .thumbs .btn2{
+  float: left;
+  width:22.87%; /*220/960*/
+  height: 318px;
+  cursor: pointer;   
+}
+
+#gallery .thumbs .btn3{
+  float: left;
+  width:22.87%; /*220/960*/
+  height: 318px;
+  cursor: pointer; 
+}
+
+#gallery .thumbs .btn4{
+  float: left;
+  width:22.87%; /*220/960*/
+  height: 318px;
+  cursor: pointer;   
+}
+
+}
+
+
+@media (max-width: 980px){
+
+  .ticket-modal .modal-container {
+  margin:0 auto;
+  position: absolute;
+  height:auto; 
+  width:60%;
+  height: 45%;
+  top: 50%;
+  left: 50%;
+  padding: 1.04167% auto;
+  transform: translate(-50%, -50%);
+  background-color: white; 
+}
+
+/* Form */
+.input-group{    
+  padding:10%; 
+  margin:-28% auto; 
+  padding-left:25%;  
+}
+
+.ticket-modal .modal-container {
+  margin:0 auto;
+  position: absolute;
+  height:auto; 
+  width:60%;
+  height: 85%;
+  top: 50%;
+  left: 50%;
+  padding: 1.04167% auto;
+  transform: translate(-50%, -50%);
+  background-color: white; 
+}
+
+/* Form */
+.input-group{    
+  padding:10%; 
+  margin:-23% auto; 
+  padding-left:20%;  
+}
+
+.form-control{
+  padding:1rem; 
+  padding-top: 0.7rem; 
+  width: 95%;
+  height:80%;
+}
+
+#gallery .thumbs img {
+  width: 31.25%; /*300/960*/
+  margin: 1.04166667%; /*10/960*/
+    }
+
+ #gallery .thumbs .btn1{
+  width: 31.25%; /*300/960*/
+  margin: 1.04166667%; /*10/960*/  
+}
+
+#gallery .thumbs .btn2{
+  width: 31.25%; /*300/960*/
+  margin: 1.04166667%; /*10/960*/  
+}
+
+#gallery .thumbs .btn3{
+  width: 31.25%; /*300/960*/
+  margin: 1.04166667%; /*10/960*/
+}
+
+#gallery .thumbs .btn4{
+  width: 31.25%; /*300/960*/
+  margin: 1.04166667%; /*10/960*/   
+}
+
+  #tickets .title .box a{  
+  margin:0 -100%;
+    }
+
+  #home{  
+  background-image: url('../img/bkgrd/ipad/home.jpg');  
+  background-size: none; 
+  }
+
+
+  video #hmvid{
+  min-width:100%;
+  min-height:100%;
+  width:100%;
+  height: 100vh;
+  left:50%;
+  top:70%;
+  position: absolute;   
+  margin:-48% auto;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  background-size: cover; 
+  }
+
+  #gallery .thumbs{  
+  width:100%;
+  margin-top: 2%;  
+  }
+
+  
+}
+
+@media (max-width:850px){
+  #gallery .thumbs .btn1{
+    width: 31.25%;
+margin: 1.04166667%;
+ }
+
+  #gallery .thumbs .btn2{
+    width: 31.25%;
+margin: 1.04166667%;
+ }
+
+  #gallery .thumbs .btn3{
+    width: 31.25%;
+margin: 1.04166667%;
+ }
+
+  #gallery .thumbs .btn4{
+    width: 31.25%;
+margin: 1.04166667%;
+ }
+
+}
+
+
+@media (max-width: 768px){
+  #gallery .thumbs img {
+    width: 47.9166667%; /*460/960*/
+    margin: 1.04166667%; /*10/960*/
+  }
+
+  #gallery .thumbs{  
+  width:100%;
+  margin-top: 3%;  
+  }
+
+
+  .ticket-modal .modal-container {
+  margin:0 auto;
+  position: absolute;
+  height:auto; 
+  width:60%;
+  height: 95%;
+  top: 50%;
+  left: 50%;
+  padding: 1.04167% auto;
+  transform: translate(-50%, -50%);
+  background-color: white; 
+  padding-bottom: 5%;
+}
+
+/* Form */
+.formWrap{    
+  margin:.20833333% auto; 
+  padding:5%; 
+ /* height: auto; */
+}
+
+.input-group{    
+  padding:10%; 
+  margin:-20% auto; 
+  padding-left:20%;  
+}
+
+.form-control{
+  padding:1rem; 
+  padding-top: 0.7rem; 
+  width: 95%;
+  height:80%;
+}
+
+#gallery .thumbs{  
+  width:100%;
+  margin-top: 2%;  
+  }
+
+  #gallery .thumbs .btn1{
+    width: 47.9166667%;
+margin: 1.04166667%;
+ }
+
+  #gallery .thumbs .btn2{
+    width: 47.9166667%;
+margin: 1.04166667%;
+ }
+
+  #gallery .thumbs .btn3{
+    width: 47.9166667%;
+margin: 1.04166667%;
+ }
+
+  #gallery .thumbs .btn4{
+    width: 47.9166667%;
+margin: 1.04166667%;
+ }
+
+
+}
+
+@media only screen and (max-width: 480px ){
+  /* Hamburger Menu*/
+  .mobile button {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border: 0;
+    text-indent: 200%;
+    overflow: hidden;
+    background: rgba(255,255,255,0.8) url("http://i.imgur.com/vKRaKDX.png") center no-repeat;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-size: 80%;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+  .mobile div{
+    display: none;  
+    margin-left: -13px;  
+  }
+
+  .mobile{
+    display: block;
+
+  }
+  .desktop{
+    display: none;  
+  }
+
+  .mobile a{
+    background: #0a898d;
+    text-align: center;
+    padding: 20px 0;
+   /* border-bottom: 1px solid #ddd;*/
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+    &:hover, &:active, &:focus
+      background: darken(#eee, 3%);
+      width: 100%;
+    float: left;   
+    left: 0;    
+    }  
+  
+  /* eof Hamburger Menu */
+  ul{    
+    text-align: center;
+    width:360px;
+  }
+
+  video{
+  min-width:80%;
+  min-height:100%;
+  width: auto;
+  height: auto;
+  left:50%;
+  top:53%;
+  position: absolute;   
+  margin:0 auto;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  background-size: cover; 
+  display: block;
+  }
+
+  .play{
+    display: block;
+  }
+
+  #info .title {  
+  text-align: center;
+  position: absolute;
+  left: 2%;
+  top: 110%;
+  padding:2%;
+  font-size: 1.2rem;  
+  font-weight: lighter; 
+  line-height: 1.8rem;
+  color:#fff;
+  width: 95%;
+  padding: 10px;
+  display: block;
+  background-color: rgba(0,0,0,0);
+
+  }
+
+  #tickets .title {  
+  text-align: center; 
+  width: 320px;
+  position: absolute;
+  left: 5px;
+  top: 150px; 
+  margin:350% auto;
+  display: block;  
+  }
+
+  #tickets .title h5{
+  margin:50px auto;  
+  width: 250px;
+  font-size: 1rem;
+  text-align: center;
+  height: 40px;
+  top:80px;
+  left:2px;    
+  display: block;
+  }
+
+  .box{
+    display: block;
+  }
+
+  .vid{
+    display: block;
+  }
+
+  .thumbs{
+    display: block;
+  } 
+
+  .ticket-modal .modal-container {
+  margin:0 auto;
+  position: absolute;
+  height:auto; 
+  width:280px;
+  height: 550px;
+  top: 320px;
+  left: 45%;
+  padding: 1.04167% auto;
+  transform: translate(-50%, -50%);
+  background-color: white; 
+  display: block;
+}
+
+  .input-group{    
+  padding:2%; 
+  margin:-60px auto;
+  height: 65px;
+  display: block;   
+  }
+
+  .form-control{
+  padding:1rem; 
+  padding-top: 0.7rem; 
+  width: 97%;
+  height:77%;
+  display: block;
+}
+
+  #gallery{
+  width: 100%;
+  max-width: 1280px;
+  margin:-150px auto;
+  padding:1.0204081%;/*10/980*/
+  padding-top:8%; 
+  display: block;
+  padding-bottom:100px;
+  }
+
+  #gallery .thumbs{  
+  width:100%;
+  margin-top: 1.0204081%;
+  padding-bottom: 10%;
+  display: block; 
+  }
+
+  #gallery .thumbs img {
+  float: left;
+  width:350px; /*220/960*/
+  margin: 8px auto; /*10/960*/
+  cursor: pointer;  
+  display: block;
+  }
+
+  #gallery .thumbs .btn1{
+    /*float:left;*/
+    width: 350px;
+ }
+
+  #gallery .thumbs .btn2{
+    /*float:left;*/
+    width: 350px;
+ }
+
+  #gallery .thumbs .btn3{
+    /*float:left;*/
+    width: 350px;
+ }
+
+  #gallery .thumbs .btn4{
+    /*float:left;*/
+    width: 350px;
+ }
+
+ 
+  footer{
+  width: 100%;
+  padding:0 2.941176470%; 
+  position: fixed;
+  z-index: 2000;
+  background-color: #000;   
+  bottom: 0; 
+  display: block;  
+  }  
+
+}
+
+@media only screen and (max-width: 320px){
+   #info .title {  
+  text-align: center;
+  position: absolute;
+  left: 2%;
+  top: 100%;
+  padding:2%;
+  font-size: 1.2rem;  
+  font-weight: lighter; 
+  line-height: 1.8rem;
+  color:#fff;
+  width: 95%;
+  padding: 10px;
+  display: block;
+  background-color: rgba(0,0,0,0);
+
+  }
+
+  #tickets .title {  
+  text-align: center; 
+  width: 320px;
+  position: absolute;
+  left: 5px;
+  top: 50px; 
+  margin:350% auto;
+  display: block;  
+  }
+
+  #tickets .title h5{
+    display: none;
+  }
+
+  #gallery{
+  width: 100%;
+  max-width: 1280px;
+  margin:100px auto;
+  padding:1.0204081%;/*10/980*/
+  padding-top:8%; 
+  display: block;
+  padding-bottom:100px;
+  }
+
+  #gallery .thumbs{  
+  width:100%;
+  margin-top: 1.0204081%;
+  padding-bottom: 10%;
+  display: block; 
+  }
+
+  #gallery .thumbs img {
+  float: left;
+  width:350px; /*220/960*/
+  margin: 8px auto; /*10/960*/
+  cursor: pointer;  
+  display: block;
+  }
+
+  
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

@@ -1,0 +1,265 @@
+/*------------------------------------------------------------------
+[ Master Stylesheet ]
+
+Project:	Bonno - Responsive Multipurpose Template
+Version:	1.2
+Last change:	09/02/15
+-------------------------------------------------------------------*/
+
+@import url(reset.css); /* Reset all styles */
+@import url(font-awesome.css);  /* the iconic font */
+
+/*  1.2. SECTIONS  */
+
+.section,
+.group{ clear: both; padding: 0;  margin: 0; -moz-box-sizing: border-box; box-sizing: border-box; }
+.cf:before, .section:before, .cf:after, .section:after, .group:before, .group:after	{ content:' '; display: table; }
+.cf:after, .section:after, .group:after{ clear:both; }
+
+/*.group{ margin-bottom: 20px !important; }*/
+
+/*  1.3. COLUMN SETUP  */
+
+.col { display: block; float:left; margin: 1% 4.5% 1% 0; }
+.col:last-child { margin-right: 0; }
+
+/*  1.4. GRID OF TWELVE  */
+
+.span_12_of_12{width:100%;}
+.span_11_of_12{width:91.26%;}
+.span_10_of_12{width:82.53%;}
+.span_9_of_12{width:73.8%;}
+.span_8_of_12{width:65.06%;}
+.span_7_of_12{width:56.33%;}
+.span_6_of_12{width:47.6%;}
+.span_5_of_12{width:38.86%;}
+.span_4_of_12{width:30.13%;}
+.span_3_of_12{width:21.4%;}
+.span_2_of_12{width:12.66%;}
+.span_1_of_12{width:3.933%;}
+
+.equal .span_2_of_12{ width: 50%; }
+.equal .span_3_of_12{ width: 25%; }
+.equal .span_4_of_12{ width: 33%; }
+
+/*------------------------------------------------------------------
+[ 2. LAYOUT ]
+-------------------------------------------------------------------*/
+
+html{ background-color: #fff; font-family: 'Raleway', serif; sx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased;  color:#1a1a1a; }
+
+html, body{ height: 100%; }
+
+.wrapper{  position:relative; min-height: 100%; height: auto !important; width: 100%; }
+
+.fpadding{ overflow: hidden; width: 100%; height: 0; padding-bottom: 353px; content: '\0020'; }
+
+.auto{ margin: auto !important; float: none; text-align: center; }
+
+.section{ max-width: 1200px; margin: 0 auto 75px; padding: 0 28px;  }
+
+.block{ overflow: hidden; }
+
+.border{ border-top: 4px solid #E7543D; }
+
+/*------------------------------------------------------------------
+[ 3. TYPOGRAPHY ]
+-------------------------------------------------------------------*/
+
+h1{ font-size: 48px; line-height: 50px; text-align: center; font-weight: 300; letter-spacing: -2px; background-color: #fff; padding: 0 35px; display: inline-block; margin-bottom: 10px; }
+h2{ font-size: 38px; line-height: 40px; text-align: center; font-weight: 400; letter-spacing: -1px; background-color: #fff; padding: 0 35px; display: inline-block; margin-bottom: 12px; }
+h3{ font-size: 30px; line-height: 32px; font-weight: 400; color: #1a1a1a; letter-spacing: -1px; margin-bottom: 10px; }
+h4{ font-size: 24px; line-height: 26px; font-weight: 300; letter-spacing: -1px; margin-bottom: 12px; }
+h5{ font-size: 20px; line-height: 25px; font-weight: 300; margin-bottom: 12px; }
+h6{ font-size: 18px; line-height: 26px; margin-bottom: 12px; font-weight: 300; color:#999999; }
+p{
+    font-size:1.2em;
+}
+
+
+/*------------------------------------------------------------------
+[ 4. PRELOADER ]
+-------------------------------------------------------------------*/
+
+.preloader { position: fixed; left: 0; top: 0; opacity: 1; z-index: 9999; width: 100%; height: 100%; background: #fff url('../images/preloader.gif') no-repeat center center; }
+
+/*------------------------------------------------------------------
+[ 5. HEADER ]
+-------------------------------------------------------------------*/
+
+.header{ margin-bottom: 59px; padding: 59px 28px 0; position: relative; z-index: 9; opacity: 0; }
+
+
+/*------------------------------------------------------------------
+[ 7. PORTFOLIO ]
+-------------------------------------------------------------------*/
+
+
+#home img{
+    background-size: cover;
+    margin: -15em auto;
+    width:97.5%;
+    /*width:60%;*/
+    height:auto;
+    border:22px solid #fff;
+}
+
+.content{
+    margin-top:18em;
+}
+
+/*.section .portfolio{
+    padding:20px;
+}
+*/
+.portfolio { font-size: 0; margin-bottom: 120px; padding: 0; }
+.portfolio > *{ display: inline-block; vertical-align: top; width: 300px; position: relative; }
+.mask{ position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: table; background-color: #E7543D; opacity: 0; font-size: 22px; text-align: center; }
+.work{ -webkit-backface-visibility: hidden; -webkit-transform: translateZ(0) scale(1.0, 1.0); }
+.work img{ width: 100%; }
+.work:hover .mask{ opacity: .99; }
+.mask > *{ display: table-cell; vertical-align: middle; color:#fff !important; text-decoration: none; opacity: 0; -webkit-transition: opacity 0.5s 0s ease-in-out; -moz-transition: opacity 0.5s 0s ease-in-out; -ms-transition: opacity 0.5s 0s ease-in-out; transition: opacity 0.5s 0s ease-in-out; }
+.work:hover .mask > *,
+li:hover .mask > *{ opacity: 1; }
+
+ul.nav-portfolio{ text-align: center; padding: 0; }
+.nav-portfolio li{ display: inline-block; margin: 0 4px 10px; font-size: 16px; line-height: 26px; text-transform: uppercase; }
+ul.nav-portfolio li:before{ display: none; }
+.nav-portfolio li a{ display: block; padding: 0 6px 8px; color: #1a1a1a; position: relative; letter-spacing: 1px; }
+.nav-portfolio li a.active,
+.nav-portfolio li a:hover{ color:#e7543d; }
+.nav-portfolio li a ins{ position: absolute; height: 1px; background-color: #F5BAB1; width: 0; margin: auto; left: 50%; bottom: 0; overflow: hidden; clear: both; -webkit-transform: translateZ(0); }
+
+
+.img{ position:relative; overflow:hidden; text-align:center; height:220px; display:block; margin:0 auto 43px; }
+.img figure:before{ position:absolute; left:0; top:0; width:100%; height:100%; background-color:#E7543D; content:'\0020'; opacity:0; z-index:2; border-radius: 100%; }
+.img figure { height: 220px; line-height: 220px; margin: auto; max-width: 100%; overflow: hidden; position: relative; width: 220px; z-index: 2; }
+.img + *{ margin-bottom: 5px; }
+.img:hover figure:before,
+.hover .img figure:before{ opacity:.9; }
+.img figure:after{ background:url(../images/ico-toggle.png) no-repeat; width:40px; height:22px; position:absolute; left:50%; top:50%; display:block; content:'\0020'; opacity:0; z-index:2; border-radius:0; margin:-11px 0 0 -24px; }
+.img:hover figure:after,
+.hover .img figure:after{ opacity:1; }
+/**/
+.img div { display: table; position: absolute; left: 0; top: 0; width: 220px; height: 100%; opacity: 0; z-index: 2; }
+.img:hover div,
+.hover .img div{ opacity: 1; }
+.img ul { display: table-cell; vertical-align: middle; padding: 0; }
+.img li { display: block; float: none; line-height: 28px; font-size: 17px; font-weight: 300; color: #fff; }
+.img li.date{ font-weight: 400; }
+
+/*------------------------------------------------------------------
+[ 10. FOOTER ]
+-------------------------------------------------------------------*/
+
+.footer{ padding-top: 75px; padding-bottom: 65px; background-color: #F2F2F2; opacity: 0; position: relative; height: 213px; margin-top: -353px; }
+.footer .section{ margin-bottom: 0; }
+.footer p{ font-size: 16px; line-height: 26px; color: #999999; padding-bottom: 53px; font-weight: 300; margin: auto; }
+.footer p:last-child{ padding-bottom: 0; }
+.footer .social{ margin-bottom: 16px; }
+.footer .social li { display: inline-block; font-size: 29px; margin: 0 5px; line-height: 30px; }
+.footer .social li a,
+.footer .social li a i {  color: #303030;  text-decoration: none; }
+.footer .social li a:hover,
+.footer .social li a:hover i { color: #e7543d; }
+
+/*------------------------------------------------------------------
+[ 11. PAGE 404 ]
+-------------------------------------------------------------------*/
+
+.page404 .content{ padding: 130px 0 40px; }
+
+.page404 .heading{ margin-bottom: 65px; }
+
+.page404 h1{ font-size: 80px; line-height: 84px; text-transform: uppercase; padding: 0; }
+.page404 h1 small{ display: block; font-size: 24px; color:#a3a3a3; margin-top: 18px; text-transform: none; line-height: 26px; letter-spacing: 0; }
+
+.page404 .fpadding{ padding-bottom: 146px; }
+.page404 .footer{ background-color: transparent; padding: 60px 0; height: 26px; margin-top: -146px; }
+
+/*------------------------------------------------------------------
+[ 14. RESPONSIVE ]
+-------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1200px) {
+    .work{ width: 25%; }
+
+    .blogroll .col{ width: 30%; }
+}
+
+@media only screen and (max-width: 1030px) {
+    .work{ width: 33.333%; }
+
+    .team .group > .col{ width: 48%; }
+
+    .equal > *{ padding-left: 3px; padding-right: 3px; }
+    .pricing .num{ font-size: 58px; }
+
+    .blogroll .col{ width: 45%; }
+}
+
+@media only screen and (max-width: 860px) {
+
+    [class*="span_"],
+    .blogroll .col{ width: 100%; }
+    .col{ float: none; margin: 0 auto 20px; width: 100%; }
+    .empty{ display: none; }
+
+    .mainmenu{ display: none; }
+    .slicknav_menu{ display: block; }
+
+    .header .col{ text-align: center; margin-bottom: 40px; }
+    .header .col:last-child{ margin-bottom: 0; min-height: 53px; }
+
+    .work{ width: 50%; }
+
+    .oneslider li .title{ font-size: 30px; }
+
+    .comment .ava{ margin-left: 0; }
+
+    .leaveacomment .formwrap,
+    .leaveacomment .button{ margin-left: 108px; }
+
+    .blogbar.fright{ margin-left: 0; margin-right: 0; }
+
+    .equal > *{ display: block !important; width: 100% !important; }
+
+    .footer p{ max-width: 450px; }
+
+    table.responsive { margin-bottom: 0; }
+
+    .pinned { position: absolute; left: 0; top: 0; background: #fff; width: 35%; overflow: hidden; overflow-x: scroll; border-right: 1px solid #ccc; border-left: 1px solid #ccc; }
+    .pinned table { border-right: none; border-left: none; width: 100%; }
+    .pinned table th, .pinned table td { white-space: nowrap; }
+    .pinned td:last-child { border-bottom: 0; }
+
+    div.table-wrapper { position: relative; margin-bottom: 20px; overflow: hidden; border-right: 1px solid #ccc; }
+    div.table-wrapper div.scrollable { margin-left: 35%; }
+    div.table-wrapper div.scrollable { overflow: scroll; overflow-y: hidden; }
+
+    table.responsive td, table.responsive th { position: relative; white-space: nowrap; overflow: hidden; }
+    table.responsive th:first-child, table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td { display: none; }
+
+    .blogroll{ text-align: center; }
+    .blogroll .col{ padding-right: 0; width: 98%; }
+    .blogroll .img{ width: 220px; }
+
+    .contact{ text-align: center; }
+    .contact table{ margin: auto; }
+}
+
+@media only screen and (max-width: 590px) {
+    .work{ width: 100%; }
+
+    .arrow.prev, .mfp-arrow-left{ left: 10px; }
+    .arrow.next, .mfp-arrow-right{ right: 10px; }
+
+    .page404 h1 small{ padding: 0 20px; }
+
+    .comment .comment{ margin-left: 0; }
+
+    .team .group > .col{ width: 98%; }
+
+    .expandteam .col p{ font-size: 15px; line-height: 22px; padding-bottom: 30px; }
+    .expandteam .social li{ font-size: 28px; line-height: 28px; }
+}

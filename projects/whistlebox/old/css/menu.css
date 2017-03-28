@@ -1,0 +1,24 @@
+a[id="video"]:target ~ #video {
+	-webkit-transform: translateY( 0px);
+    transform: translateY( 0px );
+}
+
+a[id="discover"]:target ~ #discover {
+	-webkit-transform: translateY( -500px);
+    transform: translateY( -500px );
+}
+
+a[id="explore"]:target ~ #explore {
+	-webkit-transform: translateY( -1000px);
+    transform: translateY( -1000px );
+}
+
+a[id="peace"]:target ~ #peace {
+	-webkit-transform: translateY( -1500px);
+    transform: translateY( -1500px );
+}
+
+a[id="inbox"]:target ~ #inbox {
+	-webkit-transform: translateY( -2000px);
+    transform: translateY( -2000px );
+}  

@@ -1,0 +1,144 @@
+<!-- <!doctype html> -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html> 
+    <head>  
+        <meta charset="utf-8">
+        <title></title> 
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://use.fontawesome.com/c4cc7f1e97.css">
+        <link rel="stylesheet" href="css/normalize.css">        
+        <link rel="stylesheet" href="css/main.css">    
+
+    </head>
+    <body id="top"> 
+        <header>                      
+            <nav class="desktop">              
+                <ul class="clearfix">
+                    <li><a href="#home" class="selected">HOME</a></li>
+                    <li><a href="#info">EVENT</a></li>                    
+                    <li><a href="#tickets">TICKETS</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                </ul>                
+            </nav> 
+            <nav class="mobile"> 
+              <button>Toggle</button>
+              <div>
+                <a href="#home">HOME</a>
+                <a href="#info">EVENT</a>
+                <a href="#tickets">TICKETS</a>
+                <a href="#gallery">GALLERY</a>
+              </div>
+            </nav>       
+        </header>
+
+        <main>
+          <section id="home">   
+          <!-- <img src="img/image-5.jpg" alt="" />          -->
+              <!-- <video id="hmvid">
+                <source src="video/intro.mp4" type="video/mp4" >
+              </video> -->
+              <div class="play"><!-- <h5>Play</h5> --></div>         
+          </section>
+          <section id="info">
+            <div class="title">
+              <h5>EVENT INFO</h5>
+              <p><i class="fa fa-quote-left fa-3x fa-pull fa-border" aria-hidden="true"></i>
+                Event info Spot X is a three day EDM music festival held in a different unique location around New Zealand each year, the twist is know one knows exactly where it will be. Bought to you by 100 Percent Pure NZ Spot X aims to celebrate NewZealand's amazing beauty by show-casing these unique locations in a new and interesting way. So keep a close eye on our social media outlets and look for clues because it's certainly going to be worth it!<i class="fa fa-quote-right fa-3x fa-pull fa-border" aria-hidden="true"></i></p>                
+              <h5>CAN YOU FIND SPOT X?</h5>
+            </div>
+          </section>
+          <section id="tickets">             
+            <div class="title">
+                <h5>SPOT X 2016 TICKET PRICES</h5>    
+                 <div class="circle-text">
+                  <div>
+                    <a class="ticket-btn" href="#ticket">BUY</a>
+                  </div>
+                 </div>
+                <!-- </div> -->
+
+                  <div id="ticket" class="overlay">
+                    <div class="popup">                          
+                      <a class="close" href="#tickets"></a>           
+                    </div>
+                  </div>
+              </div>                
+          </section>
+          <section id="gallery">
+            <div class="thumbs clearfix">
+              <img src="img/medium-1.jpg" alt="" data-img="img/image-1.jpg">
+              <img src="img/medium-2.jpg" alt="" data-img="img/image-2.jpg">
+              <img src="img/medium-8.jpg" alt="" data-img="img/image-8.jpg">
+              <img src="img/medium-9.jpg" alt="" data-img="img/image-9.jpg">             
+              <div class="vid">
+                <button class="btn1" type="button" data-id="Vs7vo5xqSiE"><h5 class="map">Map</h5></button>
+                <button class="btn2" type="button" data-id="gLoYiLzKHv8"><h5 class="seashell">Seashell</h5></button>
+                <button class="btn3" type="button" data-id="QINcPydZJIw"><h5 class="music">Music</h5></button>
+                <button class="btn4" type="button" data-id="LOf6swaGCdc"><h5 class="intro">Intro</button>         
+             </div>
+            </div> <!-- eof thumbs  -->                 
+          </section>          
+        </main> 
+        
+        <footer>
+          <nav> 
+            <ul>                
+              <li><a href="https://www.facebook.com/events/144216032658454/" target="_blank"><img src="img/icons/facebook.png"></a></li>
+              <li><a href="https://twitter.com/LilyMacintosh1" target="_blank"><img src="img/icons/twitter.png"></a></li>
+              <li><a href="https://www.instagram.com/spot_x_festival/" target="_blank"><img src="img/icons/instagram.png"></a></li>
+            </ul> 
+          </nav>      
+        </footer>  
+        <!-- Ticket Modal -->
+        <div class="modal ticket-modal">
+          <div class="modal-container">
+            <form class="ticket-form" action="" method="post">              
+              <div class="form-row">                        
+                <div class="formWrap">
+                    <i class="fa fa-refresh fa-spin fa-3x fa-fw" aria-hidden="true"></i>
+                    <span class="sr-only"></span>                                    
+                 <div class="input-group margin-bottom-sm"><br><br><br>
+                    <span class="input-group-addon"><i class="fa fa-user fa-fw" aria-hidden="true"></i><input class="form-control" type="text" placeholder="Your Name"></span> 
+                    <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i><input class="form-control" type="text" placeholder="Email"></span>
+                    <span class="input-group-addon"><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i><input class="form-control" type="text" placeholder="Address"></span> 
+                    <span class="input-group-addon"><i class="fa fa-globe fa-fw" aria-hidden="true"></i><input class="form-control" type="text" placeholder="City, Country"></span>
+                    <span class="input-group-addon"><i class="fa fa-credit-card fa-fw" aria-hidden="true"></i><input class="form-control" type="text" placeholder="CC number"></span>
+                    <span class="input-group-addon"><i class="fa fa-credit-card fa-fw" aria-hidden="true"></i><input class="form-control" type="text" placeholder="CC number"></span>
+                    <span class="input-group-addon"><i class="fa fa-credit-card fa-fw" aria-hidden="true"></i><input class="form-control" type="text" placeholder="Expiry mm/yyyy"></span>
+                    <span class="input-group-addon"><i class="fa fa-credit-card fa-fw" aria-hidden="true"></i><input class="form-control" type="text" placeholder="security number">  <a href="path/to/shopping/cart" class="btn btn-primary">
+                    <i class="fa fa-shopping-cart" title="View 3 items in your shopping cart" aria-hidden="true"></i>
+                    <span class="sr-only"></span></a></span>                                                               
+                </div>          
+                    <i class="fa fa-times close"></i>      
+              </div> <!-- eof formWrap  --> 
+              </div>           
+            </form>                        
+          </div>
+        </div>
+
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/velocity.min.js"></script> 
+        <!-- <script src="js/vendor/jquery.waypoints.min.js"></script>-->
+        <script src="js/main.js"></script>         
+        <script type="text/javascript">
+          var current = document.getElementById('default');
+
+            function highlite(el)
+            {
+               if (current != null)
+               {
+                   current.className = "";
+               }
+               el.className = "highlite";
+               current = el;
+            }       
+          </script>         
+                       
+    </body>   
+</html>

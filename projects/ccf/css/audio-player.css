@@ -1,0 +1,91 @@
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    //border: 1px dashed #00ff00;
+}
+
+.responsive-wrapper {
+    height: auto !important;
+}
+.responsive-wrapper {
+    max-width: 550px;
+}
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+responsive-wrapper {
+    height: auto !important;
+}
+.responsive-wrapper {
+    max-width: 550px;
+}
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.mejs-container.progression-skin {
+    height: 40px !important;
+}
+body .mejs-container.progression-skin.progression-minimal-light, body .mejs-container.progression-skin.progression-minimal-light .mejs-controls {
+    border-color: #c1c1c1;
+}
+.mejs-container.progression-skin {
+    background: #000000;
+}
+.mejs-container {
+    position: relative;
+    background: #000;
+    font-family: Helvetica,Arial;
+    text-align: left;
+    vertical-align: top;
+    text-indent: 0;
+}
+
+.mejs-container {
+    font-family: Helvetica,Arial;
+    text-align: left;
+    text-indent: 0;
+}
+.row {
+    font-size: 16px;
+    line-height: 27px;
+}
+.row {
+    color: #333333;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: left;
+}
+.block8 p, .row, .sub-footer {
+    color: #cacaca;
+    font-size: 16px;
+    line-height: 22px;
+    width:300px;
+
+}
+
+
+
+
+
+
+
+
+
+
+

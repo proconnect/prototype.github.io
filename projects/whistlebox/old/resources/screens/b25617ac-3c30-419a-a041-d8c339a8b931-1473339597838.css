@@ -1,0 +1,32 @@
+#s-b25617ac-3c30-419a-a041-d8c339a8b931 > #backgroundBox {
+  background-color: transparent;
+  background-image: none;
+  position: absolute;
+}
+#s-b25617ac-3c30-419a-a041-d8c339a8b931 > #alignmentBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#s-b25617ac-3c30-419a-a041-d8c339a8b931 #s-Loading-spinner {
+  position: absolute;
+  top: 285px;
+  left: 149px;
+  width: 77px;
+  height: 77px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+  box-shadow: none;
+}
+#jim-container .ui-page {
+  overflow-x: hidden;
+}
+.non_jim_mobile #simulation {
+  overflow-x: hidden;
+}
+#s-b25617ac-3c30-419a-a041-d8c339a8b931 > #loadMark {
+  width: 1px;
+  visibility: hidden;
+  display: none;
+}

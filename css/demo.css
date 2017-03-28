@@ -1,6 +1,6 @@
 /* General Blueprint Style */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-@font-face {   
+@font-face {    
 	font-family: 'bpicons';
 	src:url('../fonts/bpicons/bpicons.eot');
 	src:url('../fonts/bpicons/bpicons.eot?#iefix') format('embedded-opentype'),
@@ -45,8 +45,7 @@ a:hover {
 }
 
 section{
-	/*border:2px solid #ffac00;*/
-	/*border:2px solid #000;*/
+
 }
 
 section .cbp-so-section{
@@ -55,16 +54,17 @@ section .cbp-so-section{
 }
 
 #bio{
-	text-align: center;
-	width:50%;
-	margin:10% auto;
+	position: relative;
+	text-align: left;
+	width:90%;
+	margin:10% auto; /* 10%  */
 	padding:10px;
 	padding-left:20px;
 	padding-right: 20px;
 	border-radius: 10px;
 }
 
-#ux{
+/*#ux{
 	text-align: center;
 	width:50%;
 	height:auto;
@@ -72,9 +72,8 @@ section .cbp-so-section{
 	padding:10px;
 	padding-left:20px;
 	padding-right: 20px;
-	border-radius: 10px;
-	/*border:2px solid #ffac00;*/
-}
+	border-radius: 10px;	
+}*/
 
 #ccf {
 	position: relative;
@@ -296,8 +295,7 @@ header nav a:hover:before {
 	content: "\e004";
 }
 
-#spotx #curveUpColor{
-	/*border:2px solid #ffac00;*/
+#spotx #curveUpColor{	
 	display: none;
 }
 
@@ -320,8 +318,7 @@ header nav a:hover:before {
 
 #el3phant{
 	position: relative;
-	margin-top:-8% !important;	
-	/*border:2px solid #ffac00;*/
+	margin-top:-8% !important;		
 }
 
 #el3phant article img{
@@ -331,8 +328,7 @@ header nav a:hover:before {
 
 #el3phant figure img{
 	position: relative;
-	margin-top:-5% !important;
-	/*border:2px solid #ffac00;*/
+	margin-top:-5% !important;	
 }
 
 #el3phant .cbp-so-side-left{
@@ -349,8 +345,7 @@ header nav a:hover:before {
 
 #spotx figure img{
 	position: relative;
-	margin-top:5% !important;
-	/*border:2px solid #ffac00;*/
+	margin-top:5% !important;	
 }
 
 #wb{
@@ -373,16 +368,9 @@ header nav a:hover:before {
 	text-align: center;
 }
 
-#ux{
+#ccf{
 	position: relative;
-	width:80%;
-	margin-top:0 !important;
-}
-
-#ux{
-	position: relative;
-	width:60%;
-	margin-top:20% !important;
+	margin-top:10% !important;
 }
 
 #fou{
@@ -427,7 +415,7 @@ header nav{
 	position: relative;
 	/*width:60%;*/
 	height:auto;
-	margin-top:-2.8% !important;
+	margin-top:-55% !important; /* -2.8% */
 }
 
 header nav{
@@ -556,18 +544,15 @@ header nav{
 }
 
 #bio{
-	display: none;
-}
-
-#ux{
 	position: relative;
-	margin-top:73% !important;	
+	margin-top: 1% !important;
 	width:100%;
+	font-size: 12px;
 }
 
 #ccf{
 	position: relative;
-	margin-top:9% !important;	
+	margin-top:-80% !important;	
 }
 
 #ccf article img{
@@ -726,17 +711,17 @@ header nav{
 	margin-left:0 !important;
 }
 
-#ux {
+/*#ux {
 	position: relative;
 	margin-top: 310px !important;	
 	height:auto;
 	padding-left:0px;		
 	padding-bottom: 5px;
-}
+}*/
 
 #ccf{
 	position: relative;
-	margin-top:10% !important;	
+	margin-top:-50% !important;	
 }
 
 #dogs{
@@ -768,6 +753,14 @@ header nav{
 	position: relative;
 	height:95vh;
 	margin-top:-10px !important;
+}
+
+#bio{
+/*	position: relative;
+	margin-top: 1% !important;*/
+	/*width:100%;*/
+	font-size: 12px;
+	height:80vh;
 }
 
 
